@@ -1,16 +1,16 @@
-#include "0-putchar.c.h"
+#include "0-putchar.h"
 
 /**
- * main - prints 0-putchar.c
+ * main - prints 0-putchar
  *
- * Description: prints 0-putchar.c
+ * Description: prints 0-putchar
  *
  * Return: 0 (Success)
  */
 
 int main(void)
 {
-	char text[10] = "0-putchar.c";
+	char text[10] = "0-putchar";
 	int i = 0;
 
 	for (i = 0; i < 9; i++)
@@ -19,4 +19,5 @@ int main(void)
 	}
 	_putchar('\n');
 
-	return (0);}
+	return (0);
+}
