@@ -4,7 +4,8 @@
 /**
  * print_to_98 - count to 98
  * @n: variable to determine if input is greater than, less than or is 98
- *
+ * main - less than 98
+ * Return: Always 0
  */
 
 void print_to_98(int n)
@@ -33,6 +34,5 @@ printf("\n");
 }
 else
 {
-printf("%d\n", n);
-}
+printf("%d\n", n);}
 }
