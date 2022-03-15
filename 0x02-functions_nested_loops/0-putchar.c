@@ -1,16 +1,16 @@
-#include "holberton.h"
+#include "putchar.h"
 
 /**
- * main - prints Holberton
+ * main - prints putchar
  *
- * Description: prints Holberton
+ * Description: prints putchar
  *
  * Return: 0 (Success)
  */
 
 int main(void)
 {
-	char text[10] = "Holberton";
+	char text[10] = "putchar";
 	int i = 0;
 
 	for (i = 0; i < 9; i++)
@@ -19,5 +19,4 @@ int main(void)
 	}
 	_putchar('\n');
 
-	return (0);
-}
+	return (0);}
