@@ -1,5 +1,5 @@
-#ifndef main.h_H
-#define main.h_H
+#ifndef MAIN_H
+#define MAIN_H
 
 int _putchar(char c);
 int _isupper(int c);
@@ -15,4 +15,4 @@ void print_triangle(int n);
 void print_number(int n);
 int pattern(int n);
 
-#endif /* main.h_H */
+#endif /* MAIN_H */
