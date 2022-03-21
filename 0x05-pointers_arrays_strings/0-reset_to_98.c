@@ -1,24 +1,13 @@
 #include "main.h"
 
 /**
- * _strcat - concatenates two strings
- * @dest: destination char
- * @src: source char
- * Return: new char
+ * reset_to_98 - updates the value of n to 98
+ * @n: integer pointer to a variable to be updated
+ *
+ * Return: nothing
  */
 
-char *_strcat(char *dest, char *src)
+void reset_to_98(int *n)
 {
-	int i;
-	int n = 0;
-
-	while (dest[n] != '\0')
-	{
-		n++;
-	}
-	for (i = 0 ; i < n && src[i] != '\0' ; i++)
-		dest[n + i] = src[i];
-	dest[n + i] = '\0';
-
-	return (dest);
+	*n = 98;
 }
