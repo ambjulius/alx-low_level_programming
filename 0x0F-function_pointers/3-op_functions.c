@@ -1,34 +1,72 @@
-#include "3-calc.h"
-#include <stdlib.h>
 #include <stdio.h>
-#include <string.h>
+#include <stdlib.h>
 
 /**
- * get_op_func - func that selects correct op_ to make operation
- * @s: Type char str
- * Return: pointer to op_ of a and b return c or null if not operation
+ * op_add - sum of a and b
+ * @a: first operand
+ * @b: second operand
+ * Return: a + b
  */
 
-int (*get_op_func(char *s))(int, int)
+int op_add(int a, int b)
 {
-	op_t ops[] = {
-		{"+", op_add},
-		{"-", op_sub},
-		{"*", op_mul},
-		{"/", op_div},
-		{"%", op_mod},
-		{NULL, NULL}
-	};
-	int i = 0;
+	return (a + b);
+}
 
-	while (ops[i].op)
+/**
+ * op_sub - substract of a and b
+ * @a: first operand
+ * @b: second operand
+ * Return: a - b
+ */
+
+int op_sub(int a, int b)
+{
+	return (a - b);
+}
+
+/**
+ * op_mul - multiply of a and b
+ * @a: first operand
+ * @b: second operand
+ * Return: a * b
+ */
+
+int op_mul(int a, int b)
+{
+	return (a * b);
+}
+
+/**
+ * op_div - divide of a and b
+ * @a: first operand
+ * @b: second operand
+ * Return: a / b
+ */
+
+int op_div(int a, int b)
+{
+	if (b)
 	{
-		if (strcmp(s, ops[i].op) == 0)
-		{
-			return (ops[i].f);
-		}
-		i++;
+		return (a / b);
 	}
 	printf("Error\n");
-	exit(99);
+	exit(100);
+}
+
+/**
+ * op_mod - module of a and b
+ * @a: first operand
+ * @b: second operand
+ * Return: a % b
+ */
+
+int op_mod(int a, int b)
+{
+	if (b)
+	{
+		return (a % b);
+	}
+	printf("Error\n");
+	exit(100);
 }
